@@ -1,0 +1,77 @@
+=== ETHAN RECONFIGURE BLENDER MCP TO PORT 9877 ===
+Time: 05/24/2026 15:24:16
+RepoPath: C:\Users\marku\OneDrive\Documents\GitHub\Ethan
+LogPath: C:\Users\marku\OneDrive\Documents\GitHub\Ethan\logs\setup\ethan_reconfigure_blender_mcp_port_9877_20260524_152416.log
+
+=== CHECK BLENDER MCP PORT 9877 ===
+Blender MCP port 9877 is reachable.
+
+=== CHECK TOOLS ===
+claude found: C:\Users\marku\AppData\Roaming\npm\claude.ps1
+uvx found: C:\Users\marku\AppData\Local\Microsoft\WinGet\Links\uvx.exe
+
+=== CLAUDE MCP LIST BEFORE ===
+Checking MCP server healthÔÇª
+
+plugin:gitlab:gitlab: https://gitlab.com/api/v4/mcp (HTTP) - ! Needs authentication
+blender: uvx blender-mcp - Ô£ô Connected
+ExitCode: 0
+
+=== CLAUDE MCP GET BLENDER BEFORE ===
+blender:
+  Scope: Local config (private to you in this project)
+  Status: Ô£ô Connected
+  Type: stdio
+  Command: uvx
+  Args: blender-mcp
+  Environment:
+
+To remove this server, run: claude mcp remove "blender" -s local
+ExitCode: 0
+
+=== REMOVE OLD BLENDER MCP CONFIG ===
+Removed MCP server "blender" from local config
+File modified: C:\Users\marku\.claude.json [project: C:\Users\marku\OneDrive\Documents\GitHub\Ethan]
+ExitCode: 0
+
+=== NEW BLENDER MCP JSON CONFIG ===
+{"args":["blender-mcp"],"type":"stdio","env":{"BLENDER_PORT":"9877","BLENDER_HOST":"localhost","DISABLE_TELEMETRY":"true"},"command":"uvx"}
+
+=== ADD BLENDER MCP CONFIG WITH PORT 9877 ===
+Added stdio MCP server blender to local config
+ExitCode: 0
+
+=== CLAUDE MCP GET BLENDER AFTER ===
+blender:
+  Scope: Local config (private to you in this project)
+  Status: Ô£ô Connected
+  Type: stdio
+  Command: uvx
+  Args: blender-mcp
+  Environment:
+    BLENDER_PORT=9877
+    BLENDER_HOST=localhost
+    DISABLE_TELEMETRY=true
+
+To remove this server, run: claude mcp remove "blender" -s local
+ExitCode: 0
+
+=== CLAUDE MCP LIST AFTER ===
+Checking MCP server healthÔÇª
+
+plugin:gitlab:gitlab: https://gitlab.com/api/v4/mcp (HTTP) - ! Needs authentication
+blender: uvx blender-mcp - Ô£ô Connected
+ExitCode: 0
+
+=== NEXT STEPS ===
+1. Leave Blender open.
+2. Confirm Blender MCP still says Running on port 9877.
+3. Fully close the old Claude Code CLI session that failed on 9876.
+4. Start Claude Code again from this repo.
+5. Run /mcp inside Claude Code.
+6. Then run the verification prompt again.
+
+=== VERIFICATION PROMPT FOR CLAUDE CODE ===
+Use the blender-storybook-assets skill. Confirm that the Blender MCP server is available on port 9877. Then inspect the current Blender scene and list objects, materials, cameras, lights, timeline markers, render settings, and output paths. Do not change anything yet.
+
+=== DONE ===
