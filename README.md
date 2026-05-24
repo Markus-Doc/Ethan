@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ethan
+
+Ethan is a Next.js application for an immersive scrollytelling website built around a cinematic hand-bound book experience.
+
+The project direction is:
+
+> Build an immersive scrollytelling website with scroll-synchronised animations, pinned sections, cinematic transitions, and 3D interactive elements.
+
+The hero experience is a green cloth and tan leather book that rotates, opens, flips through content pages, and ends with contact information on the back cover.
+
+## Locked production decision
+
+Blender is the primary creative production platform.
+
+The selected MCP workflow is ahujasid/blender-mcp, used locally for natural language driven Blender creation and iteration.
+
+Spline is secondary only. It may be used for quick web-native prototypes, but it is not the source of truth for the book model, page animation, materials, or final rendered assets.
+
+Start here before changing the creative pipeline:
+
+- `AGENTS.md`
+- `docs/decisions/ADR-0001-blender-mcp-asset-pipeline.md`
+- `docs/asset-pipeline/blender-mcp-workflow.md`
+
+## Preferred delivery model
+
+The preferred runtime path is a scroll-scrubbed image sequence rendered into canvas, controlled by GSAP ScrollTrigger.
+
+Baseline stack:
+
+- Next.js
+- Blender
+- ahujasid/blender-mcp for local creative production
+- GSAP ScrollTrigger
+- Lenis
+- Optional Three.js or React Three Fiber where live 3D adds clear value
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Agent notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Agents must read `AGENTS.md` before making architectural, visual, animation, or asset-pipeline changes.
