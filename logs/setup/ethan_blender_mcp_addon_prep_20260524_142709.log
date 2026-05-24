@@ -1,0 +1,27 @@
+=== ETHAN BLENDER MCP ADDON PREP ===
+Time: 05/24/2026 14:27:09
+Checking repo candidate: C:\Users\marku\OneDrive\Documents\GitHub\Ethan
+Selected repo: C:\Users\marku\OneDrive\Documents\GitHub\Ethan
+Copied addon.py from old path to correct repo path: C:\Users\marku\OneDrive\Documents\GitHub\Ethan\assets\source\blender_mcp\addon.py
+Blender exe found: C:\Program Files\Blender Foundation\Blender 5.1\blender.exe
+
+=== OPENING BLENDER AND ADDON LOCATION ===
+
+=== MANUAL BLENDER STEPS ===
+1. In Blender, go to Edit > Preferences > Add-ons
+2. Click Install or Install from Disk
+3. Select the addon.py file opened in Explorer
+4. Enable the checkbox for Interface: Blender MCP
+5. In the 3D viewport, press N
+6. Open the BlenderMCP tab
+7. Leave Poly Haven off for now
+8. Click Connect to Claude
+9. Then start Claude Code from the Ethan repo and run the verification prompt
+
+=== CLAUDE MCP STATUS ===
+Checking MCP server healthÔÇª
+
+plugin:gitlab:gitlab: https://gitlab.com/api/v4/mcp (HTTP) - ! Needs authentication
+blender: uvx blender-mcp - Ô£ô Connected
+
+=== DONE ===
