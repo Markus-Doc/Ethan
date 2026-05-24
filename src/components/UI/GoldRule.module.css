@@ -1,0 +1,15 @@
+.rule {
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--gold-dark) 10%,
+    var(--gold) 30%,
+    var(--gold-light) 50%,
+    var(--gold) 70%,
+    var(--gold-dark) 90%,
+    transparent 100%
+  );
+  opacity: 0.65;
+}

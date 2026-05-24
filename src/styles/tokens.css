@@ -1,0 +1,98 @@
+/* Walker Book Works — Design Tokens
+   All values derived from custom_binding-1.jpeg
+   NEVER add hardcoded hex values outside this file */
+
+:root {
+  /* Leather — warm cognac/caramel pebble-grain from spine and corners */
+  --leather:        #C2813A;
+  --leather-dark:   #8B5A24;
+  --leather-light:  #D9A96E;
+  --leather-pale:   #EBC99A;
+
+  /* Cloth — deep forest green fine-weave linen boards */
+  --cloth:          #2C5040;
+  --cloth-mid:      #3D6B54;
+  --cloth-light:    #4E7D64;
+  --cloth-dark:     #1E3A2E;
+
+  /* Parchment — aged paper, endpaper, page backgrounds */
+  --parchment:      #F5EDD8;
+  --parchment-dark: #E8D9B8;
+  --parchment-mid:  #EDE0C4;
+
+  /* Ink — primary text, deep almost-black warm brown */
+  --ink:            #1A1208;
+  --ink-light:      #3D2E1A;
+
+  /* Gold — raised spine bands, gilded rule lines, decorative detail */
+  --gold:           #C9A84C;
+  --gold-light:     #E0C068;
+  --gold-dark:      #A07830;
+
+  /* Wax seal — deep red for the workshop CTA stamp */
+  --wax:            #8B1A1A;
+  --wax-light:      #B02020;
+
+  /* Shadow / depth */
+  --shadow-leather: rgba(139, 90, 36, 0.35);
+  --shadow-cloth:   rgba(30, 58, 46, 0.5);
+  --shadow-deep:    rgba(26, 18, 8, 0.65);
+
+  /* Spacing scale */
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  2rem;
+  --space-xl:  4rem;
+  --space-2xl: 8rem;
+
+  /* Type scale */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1.125rem;
+  --text-lg:   1.375rem;
+  --text-xl:   2rem;
+  --text-2xl:  3rem;
+  --text-3xl:  4.5rem;
+  --text-hero: clamp(2.5rem, 8vw, 6rem);
+
+  /* Font families */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body:    'EB Garamond', serif;
+  --font-label:   'Libre Baskerville', serif;
+
+  /* Book geometry — responsive on desktop */
+  --book-width:      clamp(300px, 30vw, 460px);
+  --book-height:     clamp(320px, 34vw, 500px);
+  --book-depth:      90px;
+  --spine-width:     clamp(84px, 8.5vw, 124px);
+  --corner-size:     clamp(50px, 5.2vw, 72px);
+  --band-height:     10px;
+
+  /* Animation */
+  --ease-page-turn: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  --ease-cover:     cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-leather:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast:  200ms;
+  --duration-mid:   500ms;
+  --duration-slow:  900ms;
+
+  /* Z-index layers */
+  --z-book:    10;
+  --z-tassel:  20;
+  --z-page:    30;
+  --z-overlay: 40;
+  --z-ui:      50;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --book-width:    240px;
+    --book-height:   260px;
+    --book-depth:    68px;
+    --spine-width:   68px;
+    --corner-size:   40px;
+    --text-hero:     clamp(2rem, 10vw, 3.5rem);
+    --text-3xl:      2.5rem;
+  }
+}

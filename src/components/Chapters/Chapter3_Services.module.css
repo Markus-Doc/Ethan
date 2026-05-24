@@ -1,0 +1,232 @@
+.section {
+  min-height: 180svh;
+  background-color: var(--parchment);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.bookSpread {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  min-height: 560px;
+  box-shadow:
+    0 24px 80px var(--shadow-cloth),
+    0 6px 20px var(--shadow-deep),
+    0 1px 0 rgba(255,255,255,0.06) inset;
+  border-radius: 2px;
+  position: sticky;
+  top: 4rem;
+}
+
+.leftPage {
+  flex: 1;
+  background-color: var(--parchment-mid);
+  border-right: 1px solid var(--parchment-dark);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.leftContent {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chapterLabel {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cloth);
+  opacity: 0.7;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: var(--text-2xl);
+  color: var(--leather);
+  letter-spacing: 0.06em;
+  margin: 0.25rem 0;
+}
+
+.intro {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--ink);
+  opacity: 0.8;
+  max-width: 280px;
+}
+
+.rightPage {
+  flex: 1;
+  background-color: var(--parchment);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: visible;
+}
+
+.cardsArea {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 420px;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--parchment);
+  border: 1px solid var(--parchment-dark);
+  border-radius: 2px;
+  text-decoration: none;
+  display: block;
+  opacity: 0;
+  transform: translateY(32px) rotate(var(--card-rotate, 0deg));
+  transition:
+    opacity 0.6s ease var(--card-delay, 0ms),
+    transform 0.6s var(--ease-leather) var(--card-delay, 0ms),
+    box-shadow 0.25s ease;
+  box-shadow: 0 4px 20px var(--shadow-cloth), 0 1px 4px var(--shadow-deep);
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.card.cardVisible {
+  opacity: 1;
+  transform: translateY(calc(var(--card-offset, 0px))) rotate(var(--card-rotate, 0deg));
+}
+
+.card.cardHovered {
+  transform: translateY(-8px) rotate(0deg) !important;
+  box-shadow: 0 12px 40px var(--shadow-leather), 0 4px 12px var(--shadow-deep);
+  z-index: 10 !important;
+}
+
+.cardLeatherTop {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--leather-dark),
+    var(--leather),
+    var(--leather-light),
+    var(--leather),
+    var(--leather-dark)
+  );
+}
+
+.cardBody {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: var(--text-xl);
+  color: var(--leather);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.cardSubtitle {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cloth);
+  opacity: 0.65;
+}
+
+.cardDesc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--ink);
+  opacity: 0.82;
+  margin: 0;
+}
+
+.cardCta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--leather);
+  margin-top: 0.25rem;
+}
+
+.ctaArrow {
+  transition: transform 0.2s ease;
+}
+
+.card:hover .ctaArrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 767px) {
+  .section {
+    min-height: unset;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .bookSpread {
+    flex-direction: column;
+    top: 0;
+    min-height: unset;
+  }
+
+  .leftPage {
+    border-right: none;
+    border-bottom: 1px solid var(--parchment-dark);
+  }
+
+  .leftContent {
+    padding: 2rem 1.5rem;
+  }
+
+  .rightPage {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .cardsArea {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    position: static;
+    opacity: 1;
+    transform: none !important;
+  }
+
+  .card.cardHovered {
+    transform: none !important;
+  }
+}

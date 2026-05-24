@@ -1,0 +1,66 @@
+.tassel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: var(--z-tassel);
+  will-change: transform;
+}
+
+.ribbon {
+  width: 4px;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    var(--leather-dark) 0%,
+    var(--leather) 40%,
+    var(--leather-light) 60%,
+    var(--leather) 80%,
+    var(--leather-dark) 100%
+  );
+  border-radius: 1px;
+}
+
+.ribbonSheen {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 220, 170, 0.5) 30%,
+    rgba(255, 240, 200, 0.7) 50%,
+    rgba(255, 220, 170, 0.4) 70%,
+    transparent 100%
+  );
+  border-radius: 1px;
+}
+
+.knot {
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at 35% 35%,
+    var(--leather-light) 0%,
+    var(--leather) 45%,
+    var(--leather-dark) 100%
+  );
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.3),
+    inset 0 1px 2px rgba(255,220,170,0.3);
+  flex-shrink: 0;
+}
+
+.bundle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.fringe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,49 @@
+/* Walker Book Works — Global Styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-heading: var(--loaded-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-body:    var(--loaded-eb-garamond), 'EB Garamond', Georgia, serif;
+  --font-label:   var(--loaded-libre-baskerville), 'Libre Baskerville', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--cloth-dark);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--leather);
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--cloth-dark); }
+  ::-webkit-scrollbar-thumb { background: var(--leather-dark); border-radius: 3px; }
+}
