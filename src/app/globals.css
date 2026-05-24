@@ -18,14 +18,15 @@ html {
 }
 
 body {
-  background-color: var(--cloth-dark);
+  background-color: var(--ink);
   color: var(--ink);
   font-family: var(--font-body);
   font-size: var(--text-base);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100svh;
 }
 
 a, button {

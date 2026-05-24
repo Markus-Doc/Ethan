@@ -1,0 +1,1268 @@
+/* ═══════════════════════════════════════════════════
+   Walker Book Works — BookExperience
+   The UI IS the book. Everything lives inside it.
+   ═══════════════════════════════════════════════════ */
+
+/* ── Scene ───────────────────────────────────────── */
+
+.scene {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 45% 38%, #1c1108 0%, #0d0906 55%, #060503 100%);
+}
+
+.desk {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 72%, rgba(58,36,14,0.55) 0%, transparent 58%),
+    repeating-linear-gradient(
+      87deg,
+      rgba(255,255,255,0.008) 0px,
+      transparent 1px,
+      transparent 5px,
+      rgba(255,255,255,0.005) 6px
+    );
+}
+
+.bookGlow {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(ellipse, rgba(194,129,58,0.18) 0%, transparent 70%);
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+.bookGlowOpen {
+  opacity: 0;
+}
+
+/* ── Closed Book (CSS 3D) ────────────────────────── */
+
+.closedScene {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  perspective: 1500px;
+  perspective-origin: 55% 45%;
+}
+
+.closedScene:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 12px;
+  border-radius: 4px;
+}
+
+.closedBookBody {
+  position: relative;
+  width: var(--book-width);
+  height: var(--book-height);
+  transform-style: preserve-3d;
+  transform: rotateX(8deg) rotateY(22deg);
+  transition: transform 0.5s var(--ease-cover);
+  filter:
+    drop-shadow(0 50px 90px rgba(0,0,0,0.75))
+    drop-shadow(0 20px 40px rgba(0,0,0,0.55))
+    drop-shadow(0 8px 16px rgba(0,0,0,0.4));
+}
+
+.closedScene:hover .closedBookBody {
+  transform: rotateX(6deg) rotateY(18deg) translateY(-10px);
+}
+
+/* Front cover face */
+.closedCover {
+  position: absolute;
+  width: var(--book-width);
+  height: var(--book-height);
+  top: 0;
+  left: 0;
+  transform: translateZ(calc(var(--book-depth) / 2));
+  border-radius: 1px 4px 4px 1px;
+  overflow: hidden;
+  background: var(--cloth);
+}
+
+/* Spine face */
+.closedSpine {
+  position: absolute;
+  width: var(--book-depth);
+  height: var(--book-height);
+  top: 0;
+  left: calc((var(--book-width) - var(--book-depth)) / 2);
+  transform: rotateY(-90deg) translateZ(calc(var(--book-width) / 2));
+  background: linear-gradient(
+    to right,
+    var(--leather-dark) 0%,
+    var(--leather) 30%,
+    var(--leather-light) 50%,
+    var(--leather) 70%,
+    var(--leather-dark) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page edge stack */
+.closedPageEdge {
+  position: absolute;
+  width: var(--book-depth);
+  height: var(--book-height);
+  top: 0;
+  left: calc((var(--book-width) - var(--book-depth)) / 2);
+  transform: rotateY(90deg) translateZ(calc(var(--book-width) / 2));
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--parchment) 0px,
+    var(--parchment-dark) 1px,
+    var(--parchment-mid) 2px,
+    var(--parchment) 4px
+  );
+}
+
+/* Top edge */
+.closedTopEdge {
+  position: absolute;
+  width: var(--book-width);
+  height: var(--book-depth);
+  top: calc((var(--book-height) - var(--book-depth)) / 2);
+  left: 0;
+  transform: rotateX(-90deg) translateZ(calc(var(--book-height) / 2));
+  background: linear-gradient(to bottom, var(--parchment-mid), var(--parchment-dark));
+}
+
+/* Bottom edge */
+.closedBottomEdge {
+  position: absolute;
+  width: var(--book-width);
+  height: var(--book-depth);
+  top: calc((var(--book-height) - var(--book-depth)) / 2);
+  left: 0;
+  transform: rotateX(90deg) translateZ(calc(var(--book-height) / 2));
+  background: var(--parchment-dark);
+}
+
+/* Cloth texture */
+.clothTexture {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 1.5px,
+      rgba(255,255,255,0.015) 1.5px,
+      rgba(255,255,255,0.015) 3px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 1.5px,
+      rgba(0,0,0,0.03) 1.5px,
+      rgba(0,0,0,0.03) 3px
+    );
+}
+
+/* Leather corner triangles */
+.leatherCorner {
+  position: absolute;
+  width: var(--corner-size);
+  height: var(--corner-size);
+}
+
+.cornerTL {
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, var(--leather-light) 0%, var(--leather) 45%, var(--leather-dark) 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.cornerTR {
+  top: 0;
+  right: 0;
+  background: linear-gradient(225deg, var(--leather-light) 0%, var(--leather) 45%, var(--leather-dark) 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+}
+.cornerBL {
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, var(--leather-light) 0%, var(--leather) 45%, var(--leather-dark) 100%);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.cornerBR {
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(315deg, var(--leather-light) 0%, var(--leather) 45%, var(--leather-dark) 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+/* Cover title */
+.coverText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  width: 80%;
+}
+
+.coverTitle {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(0.95rem, 2.8vw, 1.55rem);
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 24px rgba(201,168,76,0.4), 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.coverGoldRule {
+  width: 55%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  opacity: 0.7;
+}
+
+.coverSubtitle {
+  font-family: var(--font-label);
+  font-size: clamp(0.45rem, 0.9vw, 0.62rem);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  opacity: 0.65;
+}
+
+/* Tassel */
+.tassel {
+  position: absolute;
+  top: 0;
+  right: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.tasselRibbon {
+  width: 7px;
+  height: 56px;
+  background: linear-gradient(to bottom, var(--leather-dark), var(--leather), var(--leather-light));
+  border-radius: 3px 3px 2px 2px;
+}
+
+.tasselFringe {
+  display: flex;
+  gap: 2px;
+  margin-top: 3px;
+}
+
+.tasselThread {
+  display: block;
+  width: 2px;
+  height: 22px;
+  background: linear-gradient(to bottom, var(--leather), var(--leather-pale));
+  border-radius: 1px;
+  animation: tasselSway 2.8s ease-in-out infinite;
+  animation-delay: calc(var(--ti, 0) * 0.12s);
+}
+
+@keyframes tasselSway {
+  0%, 100% { transform: skewX(0deg); }
+  50% { transform: skewX(2.5deg); }
+}
+
+/* Open hint */
+.openHint {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--leather);
+  opacity: 0.45;
+  animation: hintPulse 3s ease-in-out infinite;
+}
+
+@keyframes hintPulse {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 0.7; }
+}
+
+/* ── Spine (open & closed) ───────────────────────── */
+
+.spineInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.2rem 0;
+  gap: 0.4rem;
+}
+
+.spineCompact {
+  padding: 1rem 0;
+}
+
+.spineBand {
+  width: 90%;
+  height: var(--band-height);
+  background: linear-gradient(
+    to bottom,
+    var(--gold-light) 0%,
+    var(--gold) 30%,
+    var(--gold-dark) 50%,
+    var(--gold) 70%,
+    var(--gold-light) 100%
+  );
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 -1px 2px rgba(255,255,255,0.1);
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+.spineTitle {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.7rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  text-shadow: 0 0 12px rgba(201,168,76,0.35);
+  flex-shrink: 0;
+}
+
+/* ── Opening animation ───────────────────────────── */
+
+.openingScene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  perspective: 1600px;
+}
+
+.openingBook {
+  position: relative;
+  display: flex;
+  width: min(900px, 90vw);
+  height: min(560px, 80vh);
+  animation: openingFadeIn 0.3s ease-out;
+}
+
+@keyframes openingFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.openingCoverWrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  perspective: 1400px;
+  z-index: 10;
+}
+
+.openingCover {
+  position: absolute;
+  inset: 0;
+  background: var(--cloth);
+  border-radius: 1px 4px 4px 1px;
+  transform-origin: left center;
+  transform: rotateY(0deg);
+  overflow: hidden;
+}
+
+.coverSwing {
+  animation: coverSwing 1.2s var(--ease-cover) forwards;
+}
+
+@keyframes coverSwing {
+  0% {
+    transform: rotateY(0deg);
+    box-shadow: -8px 0 24px rgba(0,0,0,0.6);
+  }
+  100% {
+    transform: rotateY(-172deg);
+    box-shadow: 8px 0 40px rgba(0,0,0,0.3);
+  }
+}
+
+.openingLeft {
+  flex: 1;
+  background: var(--parchment-mid);
+  border-right: 1px solid var(--parchment-dark);
+  overflow: hidden;
+}
+
+.openingRight {
+  flex: 1;
+  background: var(--parchment);
+  overflow: hidden;
+  animation: rightFadeIn 0.6s ease-out 0.7s both;
+}
+
+@keyframes rightFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ── Open Book Spread ────────────────────────────── */
+
+.openBook {
+  position: relative;
+  display: flex;
+  width: min(980px, 96vw);
+  height: min(600px, 88vh);
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.7),
+    0 12px 32px rgba(0,0,0,0.5),
+    0 4px 8px rgba(0,0,0,0.4);
+  border-radius: 2px;
+  animation: spreadAppear 0.5s ease-out both;
+}
+
+@keyframes spreadAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.openBookMobile {
+  width: 100vw;
+  height: 100svh;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Spine strip (open state) */
+.openSpine {
+  width: clamp(52px, 5.5vw, 72px);
+  background: linear-gradient(
+    to right,
+    var(--leather-dark) 0%,
+    var(--leather) 30%,
+    var(--leather-light) 55%,
+    var(--leather) 75%,
+    var(--leather-dark) 100%
+  );
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: inset -4px 0 12px rgba(0,0,0,0.25);
+}
+
+/* Gutter shadow */
+.gutter {
+  width: 12px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    to right,
+    rgba(26,18,8,0.28) 0%,
+    rgba(26,18,8,0.08) 50%,
+    rgba(26,18,8,0.04) 100%
+  );
+  z-index: 5;
+  position: relative;
+}
+
+/* Pages */
+.leftPage,
+.rightPage {
+  flex: 1;
+  background: var(--parchment);
+  position: relative;
+  overflow: hidden;
+}
+
+.leftPage {
+  background: var(--parchment-mid);
+  border-right: 1px solid var(--parchment-dark);
+}
+
+.pageInner {
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.pageInner::-webkit-scrollbar {
+  display: none;
+}
+
+.pageOut {
+  opacity: 0;
+  transform: translateX(-6px);
+}
+
+/* Page edge decorative lines */
+.pageEdgeLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--parchment-dark) 0px,
+    var(--parchment-mid) 3px,
+    transparent 4px,
+    transparent 8px
+  );
+  opacity: 0.4;
+}
+
+/* Corner fold (hover to turn page) */
+.cornerFold {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  background: linear-gradient(135deg, transparent 50%, rgba(201,168,76,0.15) 100%);
+  transition: background 0.2s ease;
+}
+
+.cornerFold::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 32px;
+  height: 32px;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  background: linear-gradient(135deg, transparent 40%, rgba(201,168,76,0.1));
+  border-top: 1px solid rgba(201,168,76,0.3);
+  border-right: 1px solid rgba(201,168,76,0.3);
+  transition: all 0.2s ease;
+}
+
+.cornerFold:hover {
+  background: linear-gradient(135deg, transparent 40%, rgba(201,168,76,0.28) 100%);
+}
+
+.cornerFold:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Navigation arrows */
+.navArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--leather);
+  opacity: 0.45;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 20;
+  padding: 0;
+}
+
+.navArrow:hover {
+  opacity: 0.85;
+}
+
+.navArrow:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+.navArrow svg {
+  width: 22px;
+  height: 22px;
+}
+
+.navPrev {
+  left: -52px;
+}
+
+.navNext {
+  right: -52px;
+}
+
+/* Spread dots */
+.spreadDots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--leather);
+  opacity: 0.25;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  min-width: unset;
+  min-height: unset;
+}
+
+.dot:hover {
+  opacity: 0.55;
+}
+
+.dotActive {
+  opacity: 0.8;
+  transform: scale(1.3);
+}
+
+.dot:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* ── Page content common ─────────────────────────── */
+
+.pageContent {
+  padding: 2.4rem 2rem 2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  height: 100%;
+  position: relative;
+}
+
+.chapterLabel {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cloth);
+  opacity: 0.65;
+}
+
+.goldRule {
+  background: linear-gradient(to right, var(--gold-dark), var(--gold), var(--gold-dark));
+  height: 1px;
+  opacity: 0.55;
+  border: none;
+  flex-shrink: 0;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: var(--text-xl);
+  color: var(--leather);
+  letter-spacing: 0.06em;
+  margin: 0.1rem 0;
+}
+
+.intro {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--ink);
+  opacity: 0.8;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.body p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.78;
+  color: var(--ink);
+}
+
+.dropCap {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 3.4em;
+  color: var(--leather);
+  float: left;
+  line-height: 0.78;
+  margin-right: 0.06em;
+  margin-top: 0.05em;
+}
+
+.fleuron {
+  font-size: 1.4rem;
+  color: var(--leather);
+  opacity: 0.3;
+  text-align: right;
+  margin-top: auto;
+}
+
+.pageNum {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: var(--text-sm);
+  color: var(--ink-light);
+  opacity: 0.35;
+}
+
+/* ── Endpaper ────────────────────────────────────── */
+
+.endpaper {
+  position: relative;
+  height: 100%;
+  background: color-mix(in srgb, var(--cloth-dark) 12%, var(--parchment));
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marblingFill {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.endpaperQuote {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2.5rem;
+}
+
+.quoteText {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.2vw, 1.55rem);
+  color: var(--ink);
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.quoteAttrib {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--leather);
+  opacity: 0.7;
+}
+
+/* ── The Craft ───────────────────────────────────── */
+
+.illustrationArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.toolsSvg {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+/* ── Services ────────────────────────────────────── */
+
+.cardsArea {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.serviceCard {
+  position: absolute;
+  width: min(240px, 85%);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-dark);
+  border-radius: 2px;
+  text-decoration: none;
+  display: block;
+  top: var(--card-offset, 0);
+  z-index: var(--card-z, 1);
+  transform: rotate(var(--card-rotate, 0deg));
+  box-shadow: 0 4px 18px var(--shadow-leather), 0 1px 4px var(--shadow-deep);
+  transition: transform 0.25s var(--ease-leather), box-shadow 0.25s ease, z-index 0s;
+}
+
+.serviceCardHovered {
+  transform: translateY(-10px) rotate(0deg) !important;
+  box-shadow: 0 14px 40px var(--shadow-leather), 0 4px 14px var(--shadow-deep) !important;
+  z-index: 20 !important;
+}
+
+.cardLeatherTop {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--leather-dark),
+    var(--leather),
+    var(--leather-light),
+    var(--leather),
+    var(--leather-dark)
+  );
+}
+
+.cardBody {
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: var(--text-lg);
+  color: var(--leather);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.cardSub {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--cloth);
+  opacity: 0.6;
+}
+
+.cardDesc {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.68;
+  color: var(--ink);
+  opacity: 0.8;
+  margin: 0.3rem 0 0;
+}
+
+/* ── Process ─────────────────────────────────────── */
+
+.processSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  flex: 1;
+}
+
+.processStep {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stepNum {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 2.4rem;
+  color: var(--leather);
+  opacity: 0.22;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: var(--text-lg);
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.stepDesc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.72;
+  color: var(--ink);
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* ── Workshops ───────────────────────────────────── */
+
+.workshopDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  flex: 1;
+}
+
+.workshopDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  border-bottom: 1px solid var(--parchment-dark);
+  padding-bottom: 0.75rem;
+}
+
+.detailLabel {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cloth);
+  opacity: 0.6;
+}
+
+.detailValue {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.workshopNote {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.72;
+  color: var(--ink);
+  opacity: 0.65;
+  font-style: italic;
+  margin-top: auto;
+}
+
+.waxSealPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.waxSealLink {
+  display: block;
+  text-decoration: none;
+}
+
+.waxSeal {
+  width: clamp(100px, 18vw, 150px);
+  height: clamp(100px, 18vw, 150px);
+  transition: transform 0.3s var(--ease-leather), filter 0.3s ease;
+  filter: drop-shadow(0 6px 20px rgba(139,26,26,0.45));
+}
+
+.waxSealLink:hover .waxSeal {
+  transform: scale(1.06) rotate(-2deg);
+  filter: drop-shadow(0 10px 30px rgba(139,26,26,0.6));
+}
+
+.waxSealLink:focus-visible .waxSeal {
+  filter: drop-shadow(0 0 0 3px var(--gold));
+}
+
+.waxSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.sealNote {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--leather-dark);
+  opacity: 0.55;
+}
+
+/* ── Contact ─────────────────────────────────────── */
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.contactLine {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--parchment-dark);
+}
+
+.contactLabel {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cloth);
+  opacity: 0.6;
+}
+
+.contactValue {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--ink);
+}
+
+.contactLink {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--leather-dark);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.contactLink:hover {
+  border-bottom-color: var(--leather);
+}
+
+.contactLink:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.ctaButton {
+  display: inline-block;
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--parchment);
+  background: var(--leather);
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 1px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  margin-top: auto;
+  align-self: flex-start;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.ctaButton:hover {
+  background: var(--leather-dark);
+  transform: translateY(-1px);
+}
+
+.ctaButton:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* Studio mark (contact right endpaper) */
+.studioMark {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.studioMarkInitials {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2.8rem;
+  color: var(--leather);
+  letter-spacing: 0.15em;
+  opacity: 0.75;
+}
+
+.studioMarkRule {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  opacity: 0.6;
+}
+
+.studioMarkName {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ink);
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
+
+.studioMarkEst {
+  font-family: var(--font-label);
+  font-size: 0.6rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  opacity: 0.45;
+}
+
+/* ── Mobile ──────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .openBook {
+    flex-direction: column;
+    width: 100vw;
+    height: 100svh;
+    border-radius: 0;
+    box-shadow: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .openSpine {
+    display: none;
+  }
+
+  .gutter {
+    display: none;
+  }
+
+  .leftPage {
+    min-height: 50svh;
+    border-right: none;
+    border-bottom: 1px solid var(--parchment-dark);
+    flex: unset;
+  }
+
+  .rightPage {
+    flex: unset;
+    min-height: 50svh;
+  }
+
+  .pageContent {
+    padding: 1.6rem 1.25rem;
+  }
+
+  .heading {
+    font-size: var(--text-lg);
+  }
+
+  .dropCap {
+    font-size: 2.8em;
+    line-height: 0.82;
+  }
+
+  .navPrev {
+    left: 0.5rem;
+    top: 25svh;
+    transform: none;
+  }
+
+  .navNext {
+    right: 0.5rem;
+    top: 25svh;
+    transform: none;
+  }
+
+  .spreadDots {
+    bottom: 0.75rem;
+    position: fixed;
+  }
+
+  .cardsArea {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .serviceCard {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .serviceCardHovered {
+    transform: translateY(-4px) !important;
+  }
+
+  .waxSeal {
+    width: 120px;
+    height: 120px;
+  }
+
+  .endpaperQuote {
+    padding: 1.5rem;
+  }
+
+  .quoteText {
+    font-size: 1.1rem;
+  }
+
+  .cornerFold {
+    display: none;
+  }
+}
+
+/* ── Reduced motion ──────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .closedBookBody,
+  .closedCover,
+  .openingCover,
+  .openBook,
+  .pageInner,
+  .waxSeal,
+  .tasselThread {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .coverSwing {
+    transform: rotateY(-172deg) !important;
+  }
+}
