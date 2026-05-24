@@ -1,0 +1,13 @@
+Walker Bookworks video reference frames
+
+Sequence:
+- walker_bookworks_frame_01_front_hero.png
+- walker_bookworks_frame_02_tilt_begin.png
+- walker_bookworks_frame_03_tilt_mid.png
+- walker_bookworks_frame_04_laid_flat_closed.png
+- walker_bookworks_frame_05_opening_cover.png
+- walker_bookworks_frame_06_open_blank_spread.png
+- walker_bookworks_frame_07_page_mid_flip.png
+- walker_bookworks_frame_08_later_blank_spread.png
+- walker_bookworks_frame_09_final_blank_spread.png
+- walker_bookworks_frame_10_back_cover_closed.png

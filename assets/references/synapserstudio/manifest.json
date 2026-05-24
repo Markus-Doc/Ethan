@@ -1,16 +1,41 @@
 {
   "start_url": "https://www.synapserstudio.com/",
-  "generated_at": "2026-05-24T06:35:48Z",
+  "generated_at": "2026-05-24T06:39:05Z",
   "robots_txt_respected": true,
   "downloaded": false,
   "pages_crawled": [
     "https://synapserstudio.com",
+    "https://synapserstudio.com/",
     "https://synapserstudio.com/archive",
+    "https://synapserstudio.com/archive/albano-morgado",
+    "https://synapserstudio.com/archive/ekspi",
+    "https://synapserstudio.com/archive/greasy-monkeys",
+    "https://synapserstudio.com/archive/repulsor",
+    "https://synapserstudio.com/archive/rota-do-neveiro",
     "https://synapserstudio.com/manifesto",
     "https://synapserstudio.com/pt",
-    "https://www.synapserstudio.com/"
+    "https://synapserstudio.com/pt/archive",
+    "https://synapserstudio.com/pt/archive/albano-morgado",
+    "https://synapserstudio.com/pt/archive/ekspi",
+    "https://synapserstudio.com/pt/archive/greasy-monkeys",
+    "https://synapserstudio.com/pt/archive/repulsor",
+    "https://synapserstudio.com/pt/archive/rota-do-neveiro",
+    "https://synapserstudio.com/pt/manifesto",
+    "https://www.synapserstudio.com/",
+    "https://www.synapserstudio.com/archive",
+    "https://www.synapserstudio.com/archive/albano-morgado",
+    "https://www.synapserstudio.com/archive/ekspi",
+    "https://www.synapserstudio.com/archive/greasy-monkeys",
+    "https://www.synapserstudio.com/archive/repulsor",
+    "https://www.synapserstudio.com/archive/rota-do-neveiro",
+    "https://www.synapserstudio.com/manifesto",
+    "https://www.synapserstudio.com/pt",
+    "https://www.synapserstudio.com/pt/archive",
+    "https://www.synapserstudio.com/pt/archive/ekspi",
+    "https://www.synapserstudio.com/pt/archive/greasy-monkeys",
+    "https://www.synapserstudio.com/pt/manifesto"
   ],
-  "asset_count": 151,
+  "asset_count": 184,
   "assets": [
     {
       "url": "https://www.synapserstudio.com/sounds/tick.wav",
@@ -445,6 +470,15 @@
       "local_path": null
     },
     {
+      "url": "https://cdn.sanity.io/images/27re645u/production/8b524a09833853814e2879583460d65ba0f3001f-3600x1442.png",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/greasy-monkeys",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": null,
+      "local_path": null
+    },
+    {
       "url": "https://cdn.sanity.io/images/27re645u/production/8e7fc1635f35324ba4682b6eff056a66b5b05d52-3600x1434.png?w=600&h=600&fit=max&auto=format&q=75",
       "kind": "image",
       "source_page": "https://synapserstudio.com/archive",
@@ -589,6 +623,15 @@
       "local_path": null
     },
     {
+      "url": "https://cdn.sanity.io/images/27re645u/production/ecd4d28f14ba49d7b8ab89f23e872d6bb5de18f4-2560x1440.png",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/ekspi",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": null,
+      "local_path": null
+    },
+    {
       "url": "https://cdn.sanity.io/images/27re645u/production/ecd4d28f14ba49d7b8ab89f23e872d6bb5de18f4-2560x1440.png?w=600&h=600&fit=max&auto=format&q=75",
       "kind": "image",
       "source_page": "https://synapserstudio.com/archive",
@@ -661,9 +704,27 @@
       "local_path": null
     },
     {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F0593325baf89f1b5524d276120c28e077cd3cd07-3600x1434.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/greasy-monkeys",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
       "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F087335f2892da2bb59d99837115bfb2f6ce49e89-1344x1344.png&w=384&q=75",
       "kind": "image",
       "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F14ffb754b80b284bf6e18ba1cdf72d799111151a-1920x810.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/repulsor",
       "status": 200,
       "content_type": "image/avif",
       "bytes": null,
@@ -679,9 +740,90 @@
       "local_path": null
     },
     {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F25b185dccc56f68857dba2d18b20e3b9ceabc3ca-4000x3000.png&w=750&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/rota-do-neveiro",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F260a9067f864976d6c8a8ec712c7bb8c5dc65172-1920x810.png&w=1200&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/repulsor",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F351d6319f0fead55762f7aaf072ede7721b3d461-5000x3750.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/albano-morgado",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F49263708f23deaa3a6c2e52d349de3c0046255eb-3600x1430.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/greasy-monkeys",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F4b2418dcef56b0536189d52b4d566e74dc13a94f-4500x3000.png&w=1920&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/albano-morgado",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
       "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F623968a1b445a463f3ed8f477d07ebb9a88b237c-757x484.png&w=384&q=75",
       "kind": "image",
       "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F66bbfc873f37b8af7d36e250881d8a9f045536d3-4000x3000.png&w=750&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/rota-do-neveiro",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F7fa92ebe864d440c174e3e70a941900d8fa1d3fa-3600x1438.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/greasy-monkeys",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F8071a03811853de0fcf274029b4ee0e4e2b494a2-2560x1440.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/ekspi",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F951abfc23a294d3367b0d8cbe26e50da7293db8f-12000x3000.png&w=1200&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/rota-do-neveiro",
       "status": 200,
       "content_type": "image/avif",
       "bytes": null,
@@ -697,9 +839,144 @@
       "local_path": null
     },
     {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fa97237a8845d8c75910e54cf8a378cac8cdf0603-2560x1440.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/ekspi",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Faa1b35a25ccae6d748d2a2bb2578d5cc70d618a6-11649x8002.png&w=1920&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/rota-do-neveiro",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fb41602fafe1b5767809c0502240d82404fae0c74-2560x1440.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/ekspi",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fbaf96de3a26761b130ab078fd0c3ce5f2b6bd5c8-5000x3500.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/albano-morgado",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fbafdc3f817787cce6dda8165c3acf91b47303b5c-3600x1454.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/greasy-monkeys",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fbee9cc35d6f46aefa49098013f6416d9e06003d6-2560x1440.png&w=1200&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/ekspi",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fcf8beb590391c8cea25ebffef1764a3e3e3d86da-4000x3000.png&w=1920&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/rota-do-neveiro",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fdace8a75577b16626332c5e48962f884f2a8e895-1920x810.png&w=1200&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/repulsor",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fde1ee1ea367844329943afd15d25c6bf3b500059-1920x810.png&w=1200&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/repulsor",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fe45644c4ba52b19d9cb3006ea3227408c1f9ffc1-4500x3000.png&w=750&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/albano-morgado",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fe536603e75c54be1a808d70194565a29e04d6948-3600x1432.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/greasy-monkeys",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Fe74bbda342a0417aed8e6d6eadae7e05cd27bb96-5000x3500.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/albano-morgado",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
       "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Ff01b14a0f0d1aeb88c756096783e5fe25570a881-1024x1024.png&w=384&q=75",
       "kind": "image",
       "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Ff3c3de3d541716fe24f02ae4edb90e1e3dd54847-4500x3000.png&w=750&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/albano-morgado",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Ff4b413610071271349113dda371a9953d8446e50-1920x810.png&w=1200&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/repulsor",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Ff4b413610071271349113dda371a9953d8446e50-1920x810.png&w=640&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive/repulsor",
       "status": 200,
       "content_type": "image/avif",
       "bytes": null,
@@ -871,6 +1148,15 @@
       "url": "https://synapserstudio.com/_next/static/chunks/6c3eff71c8dd3f35.js",
       "kind": "runtime",
       "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/6cd13854f65a8b91.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/archive/rota-do-neveiro",
       "status": null,
       "content_type": null,
       "bytes": null,
@@ -1147,6 +1433,15 @@
       "local_path": null
     },
     {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/6cd13854f65a8b91.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/archive/rota-do-neveiro",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
       "url": "https://www.synapserstudio.com/_next/static/chunks/74c94575d21c5bbf.js",
       "kind": "runtime",
       "source_page": "https://www.synapserstudio.com/",
@@ -1350,6 +1645,33 @@
       "source_page": "https://www.synapserstudio.com/",
       "status": 200,
       "content_type": "text/css; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/files/27re645u/production/533e35615d4f2ee371ec725d506d6c04b8585236.mp4",
+      "kind": "video",
+      "source_page": "https://synapserstudio.com/archive/greasy-monkeys",
+      "status": 206,
+      "content_type": "video/mp4",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/files/27re645u/production/77aaab8a57d7af5fe76704a36191ca06c56392a4.mp4",
+      "kind": "video",
+      "source_page": "https://synapserstudio.com/archive/ekspi",
+      "status": 206,
+      "content_type": "video/mp4",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/files/27re645u/production/bcab20466aaff4afa2f1b1b7267a6f1cb780c2d9.mov",
+      "kind": "video",
+      "source_page": "https://synapserstudio.com/archive/repulsor",
+      "status": 206,
+      "content_type": "video/quicktime",
       "bytes": null,
       "local_path": null
     },
