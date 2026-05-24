@@ -45,10 +45,10 @@ export default function Chapter6Contact() {
             <p className={styles.studioName}>Walker Book Works</p>
             <div className={styles.embossDivider} />
             <a
-              href={`mailto:Info@walkerbookworks.com.au`}
+              href={`mailto:info@walkerbookworks.com.au`}
               className={styles.contactLine}
             >
-              Info@walkerbookworks.com.au
+              info@walkerbookworks.com.au
             </a>
             <a
               href={`tel:+610431339084`}

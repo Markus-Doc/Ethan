@@ -13,6 +13,7 @@ export default function Chapter0Hero() {
 
   return (
     <section id="chapter-hero" className={styles.section}>
+      <DustParticles />
       <div className={styles.bookWrapper}>
         <ScrollSequence
           manifestPath="/sequences/book-hero/manifest.json"
@@ -20,7 +21,6 @@ export default function Chapter0Hero() {
           className={styles.scrollSequence}
         />
         <TasselBookmark top={-8} left="52%" length={130} />
-        <DustParticles />
       </div>
 
       <div className={styles.text}>

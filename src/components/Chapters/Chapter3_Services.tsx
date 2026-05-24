@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useEffect } from 'react'
 import GoldRule from '@/components/UI/GoldRule'
+import PageEdge from '@/components/UI/PageEdge'
 import TasselBookmark from '@/components/Book/TasselBookmark'
 import { ROUTES } from '@/config/squarespace'
 import styles from './Chapter3_Services.module.css'
@@ -12,6 +13,7 @@ const SERVICES = [
     subtitle: 'Restoration & Rebinding',
     desc: 'Damaged spines, broken hinges, detached boards, and torn pages — restored to integrity with period-appropriate materials and techniques.',
     href: ROUTES.repair,
+    cta: 'Enquire',
     rotation: -1.8,
   },
   {
@@ -19,6 +21,7 @@ const SERVICES = [
     subtitle: 'Full Commission Binding',
     desc: 'Quarter-bound, half-bound, or full leather — every binding is constructed by hand, from selecting the cloth to tooling the spine.',
     href: ROUTES.binding,
+    cta: 'Enquire',
     rotation: 2.2,
   },
   {
@@ -26,6 +29,7 @@ const SERVICES = [
     subtitle: 'Hands-On Classes',
     desc: 'Intimate bookbinding workshops — learn to fold, sew, and case-in your own hand-bound book. All materials provided.',
     href: ROUTES.workshops,
+    cta: 'Book',
     rotation: -1.2,
   },
   {
@@ -33,9 +37,16 @@ const SERVICES = [
     subtitle: 'Bespoke Commissions',
     desc: 'Unusual projects and bespoke commissions considered. If it involves a book, Ethan is interested.',
     href: ROUTES.enquiry,
+    cta: 'Enquire',
     rotation: 1.5,
   },
 ]
+
+const ArrowRight = () => (
+  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" aria-hidden="true" className={styles.ctaArrow}>
+    <path d="M1 5h10M7 1l4 4-4 4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+)
 
 export default function Chapter3Services() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -63,6 +74,7 @@ export default function Chapter3Services() {
       <div className={styles.bookSpread}>
         {/* Left page — label */}
         <div className={styles.leftPage}>
+          <PageEdge side="right" />
           <TasselBookmark top={-8} left="50%" length={100} />
           <div className={styles.leftContent}>
             <span className={styles.chapterLabel}>Chapter Two</span>
@@ -78,6 +90,7 @@ export default function Chapter3Services() {
 
         {/* Right page — stacking cards */}
         <div className={styles.rightPage}>
+          <PageEdge side="left" />
           <div className={styles.cardsArea}>
             {SERVICES.map((svc, i) => {
               const isVisible = i < visibleCards
@@ -109,8 +122,8 @@ export default function Chapter3Services() {
                     <GoldRule width="90%" />
                     <p className={styles.cardDesc}>{svc.desc}</p>
                     <div className={styles.cardCta}>
-                      <span>Enquire</span>
-                      <span className={styles.ctaArrow}>→</span>
+                      <span>{svc.cta}</span>
+                      <ArrowRight />
                     </div>
                   </div>
                 </a>

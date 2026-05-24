@@ -12,6 +12,7 @@ export default function GoldRule({ className = '', width = '80%' }: Props) {
       className={`${styles.rule} ${className}`}
       style={{ width }}
       role="separator"
+      aria-hidden="true"
     />
   )
 }

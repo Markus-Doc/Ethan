@@ -4,16 +4,44 @@
   background-image:
     radial-gradient(ellipse 80% 60% at 20% 80%, rgba(194, 129, 58, 0.08) 0%, transparent 55%),
     radial-gradient(ellipse 70% 50% at 80% 20%, rgba(44, 80, 64, 0.4) 0%, transparent 60%);
-  animation: workshopBgShift 16s ease-in-out infinite alternate;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
-@keyframes workshopBgShift {
-  0%   { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+/* Grain texture — matches Ch0 / Ch6 cloth sections */
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='0.9'/%3E%3C/svg%3E");
+  background-size: 180px;
+  opacity: 0.04;
+}
+
+/* Ambient glow — slow breathing pulse behind the spread */
+.section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201, 168, 76, 0.06) 0%, transparent 70%);
+  animation: workshopGlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes workshopGlow {
+  0%   { opacity: 0.6; transform: scale(0.95); }
+  100% { opacity: 1;   transform: scale(1.05); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section::after { animation: none; }
 }
 
 .spread {
@@ -21,6 +49,8 @@
   width: 100%;
   max-width: 900px;
   min-height: 540px;
+  position: relative;
+  z-index: 1;
   box-shadow:
     0 20px 60px rgba(0,0,0,0.5),
     0 4px 12px rgba(0,0,0,0.4);

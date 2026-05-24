@@ -14,7 +14,8 @@
   min-height: 540px;
   box-shadow:
     0 20px 60px var(--shadow-cloth),
-    0 4px 12px var(--shadow-deep);
+    0 4px 12px var(--shadow-deep),
+    inset 0 0 0 1px var(--parchment-dark);
   border-radius: 2px;
   overflow: hidden;
   position: relative;
@@ -187,5 +188,11 @@
 
   .heading {
     font-size: var(--text-xl);
+  }
+
+  /* Tighten drop cap on narrow viewports to avoid line-wrap issues */
+  .body p:first-child::first-letter {
+    font-size: 2.6em;
+    line-height: 0.82;
   }
 }

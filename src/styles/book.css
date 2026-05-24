@@ -122,7 +122,7 @@
     ellipse at 40% 35%,
     var(--wax-light) 0%,
     var(--wax) 50%,
-    #5A0A0A 100%
+    var(--wax-crack) 100%
   );
   box-shadow:
     0 3px 12px rgba(139, 26, 26, 0.4),

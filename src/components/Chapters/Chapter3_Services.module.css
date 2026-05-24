@@ -15,10 +15,12 @@
   box-shadow:
     0 24px 80px var(--shadow-cloth),
     0 6px 20px var(--shadow-deep),
-    0 1px 0 rgba(255,255,255,0.06) inset;
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    inset 0 0 0 1px var(--parchment-dark);
   border-radius: 2px;
   position: sticky;
   top: 4rem;
+  overflow: hidden;
 }
 
 .leftPage {
@@ -181,9 +183,11 @@
 
 .ctaArrow {
   transition: transform 0.2s ease;
+  flex-shrink: 0;
 }
 
-.card:hover .ctaArrow {
+.card:hover .ctaArrow,
+.card:focus-visible .ctaArrow {
   transform: translateX(4px);
 }
 
