@@ -15,6 +15,14 @@ This guide defines how Ethan should use Blender and MCP for the cinematic book w
 | Optional live 3D layer | Three.js or React Three Fiber |
 | Secondary prototype tool | Spline |
 
+## Read first
+
+Before generating assets, read:
+
+- `docs/asset-pipeline/blender-book-asset-generation-instructions.md`
+- `docs/decisions/ADR-0001-blender-mcp-asset-pipeline.md`
+- `AGENTS.md`
+
 ## Creative intent
 
 The hero book should feel physical, crafted, cinematic, and premium.
