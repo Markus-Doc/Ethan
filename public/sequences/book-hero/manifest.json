@@ -1,0 +1,69 @@
+{
+  "frameCount": 9,
+  "desktop": [
+    "/sequences/book-hero/desktop/book_hero_0001.webp",
+    "/sequences/book-hero/desktop/book_hero_0002.webp",
+    "/sequences/book-hero/desktop/book_hero_0003.webp",
+    "/sequences/book-hero/desktop/book_hero_0004.webp",
+    "/sequences/book-hero/desktop/book_hero_0005.webp",
+    "/sequences/book-hero/desktop/book_hero_0006.webp",
+    "/sequences/book-hero/desktop/book_hero_0007.webp",
+    "/sequences/book-hero/desktop/book_hero_0008.webp",
+    "/sequences/book-hero/desktop/book_hero_0009.webp"
+  ],
+  "mobile": [
+    "/sequences/book-hero/mobile/book_hero_0001.webp",
+    "/sequences/book-hero/mobile/book_hero_0002.webp",
+    "/sequences/book-hero/mobile/book_hero_0003.webp",
+    "/sequences/book-hero/mobile/book_hero_0004.webp",
+    "/sequences/book-hero/mobile/book_hero_0005.webp",
+    "/sequences/book-hero/mobile/book_hero_0006.webp",
+    "/sequences/book-hero/mobile/book_hero_0007.webp",
+    "/sequences/book-hero/mobile/book_hero_0008.webp",
+    "/sequences/book-hero/mobile/book_hero_0009.webp"
+  ],
+  "sections": [
+    {
+      "name": "rotateReveal",
+      "frameStart": 0,
+      "frameEnd": 1,
+      "scrollStart": 0,
+      "scrollEnd": 0.15
+    },
+    {
+      "name": "coverOpen",
+      "frameStart": 2,
+      "frameEnd": 3,
+      "scrollStart": 0.15,
+      "scrollEnd": 0.35
+    },
+    {
+      "name": "firstPage",
+      "frameStart": 4,
+      "frameEnd": 4,
+      "scrollStart": 0.35,
+      "scrollEnd": 0.5
+    },
+    {
+      "name": "pageFlips",
+      "frameStart": 5,
+      "frameEnd": 6,
+      "scrollStart": 0.5,
+      "scrollEnd": 0.72
+    },
+    {
+      "name": "backCover",
+      "frameStart": 7,
+      "frameEnd": 7,
+      "scrollStart": 0.72,
+      "scrollEnd": 0.88
+    },
+    {
+      "name": "contactHold",
+      "frameStart": 8,
+      "frameEnd": 8,
+      "scrollStart": 0.88,
+      "scrollEnd": 1
+    }
+  ]
+}

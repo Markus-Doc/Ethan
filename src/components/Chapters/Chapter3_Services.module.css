@@ -98,7 +98,7 @@
     opacity 0.6s ease var(--card-delay, 0ms),
     transform 0.6s var(--ease-leather) var(--card-delay, 0ms),
     box-shadow 0.25s ease;
-  box-shadow: 0 4px 20px var(--shadow-cloth), 0 1px 4px var(--shadow-deep);
+  box-shadow: 0 4px 20px var(--shadow-leather), 0 1px 4px var(--shadow-deep);
   overflow: hidden;
   cursor: pointer;
   min-height: 44px;

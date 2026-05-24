@@ -33,8 +33,15 @@ a, button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--leather);
+  outline: 2px solid var(--gold);
   outline-offset: 3px;
+  border-radius: 1px;
+}
+
+/* Ensure tap targets >=44px for all interactive elements */
+a, button, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
 }
 
 img {

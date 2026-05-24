@@ -39,8 +39,14 @@
   position: relative;
   margin-bottom: 3rem;
   z-index: var(--z-book);
+  width: min(480px, 90vw);
   /* Warm halo behind the book */
   filter: drop-shadow(0 32px 80px rgba(26, 18, 8, 0.8)) drop-shadow(0 0 120px rgba(201, 168, 76, 0.06));
+}
+
+.scrollSequence {
+  width: 100%;
+  aspect-ratio: 16 / 10;
 }
 
 
@@ -53,6 +59,7 @@
 .wordmark {
   font-family: var(--font-heading);
   font-weight: 300;
+  font-style: italic;
   font-size: var(--text-hero);
   letter-spacing: 0.14em;
   color: var(--parchment);

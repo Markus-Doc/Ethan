@@ -14,18 +14,40 @@ export default function Chapter1Open() {
     const section = sectionRef.current
     if (!section) return
 
-    const onScroll = () => {
-      const rect = section.getBoundingClientRect()
-      const windowH = window.innerHeight
-      // progress 0→1 as section enters and traverses viewport
-      const progress = Math.max(0, Math.min(1, (windowH - rect.top) / (windowH + rect.height * 0.6)))
-      setCoverOpen(progress)
-      if (progress > 0.6) setQuoteVisible(true)
-    }
+    const isDesktop = window.innerWidth >= 768
 
-    window.addEventListener('scroll', onScroll, { passive: true })
-    onScroll()
-    return () => window.removeEventListener('scroll', onScroll)
+    if (isDesktop) {
+      // GSAP ScrollTrigger scrub:1.5 on desktop
+      import('gsap').then(({ gsap }) => {
+        import('gsap/ScrollTrigger').then(({ ScrollTrigger }) => {
+          gsap.registerPlugin(ScrollTrigger)
+
+          const proxy = { progress: 0 }
+          ScrollTrigger.create({
+            trigger: section,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1.5,
+            onUpdate: (self) => {
+              const p = self.progress
+              setCoverOpen(p)
+              if (p > 0.6) setQuoteVisible(true)
+            },
+          })
+        })
+      })
+    } else {
+      const onScroll = () => {
+        const rect = section.getBoundingClientRect()
+        const windowH = window.innerHeight
+        const progress = Math.max(0, Math.min(1, (windowH - rect.top) / (windowH + rect.height * 0.6)))
+        setCoverOpen(progress)
+        if (progress > 0.6) setQuoteVisible(true)
+      }
+      window.addEventListener('scroll', onScroll, { passive: true })
+      onScroll()
+      return () => window.removeEventListener('scroll', onScroll)
+    }
   }, [])
 
   return (
@@ -34,7 +56,6 @@ export default function Chapter1Open() {
         <BookIllustration coverOpen={coverOpen} />
         <TasselBookmark top={-8} left="52%" length={120} />
 
-        {/* Specular hinge highlight sweeps with opening */}
         <div
           className={styles.hingeHighlight}
           style={{

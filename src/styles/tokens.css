@@ -31,7 +31,11 @@
 
   /* Wax seal — deep red for the workshop CTA stamp */
   --wax:            #8B1A1A;
+  --wax-mid:        #8B1A1A;
   --wax-light:      #B02020;
+  --wax-dark:       #4A0A0A;
+  --wax-ring:       #6B0E0E;
+  --wax-crack:      #5A0A0A;
 
   /* Shadow / depth */
   --shadow-leather: rgba(139, 90, 36, 0.35);

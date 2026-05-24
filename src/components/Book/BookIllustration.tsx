@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function BookIllustration({ coverOpen = 0, className = '' }: Props) {
-  const coverRotate = coverOpen * -160
+  const coverRotate = coverOpen * -165
 
   return (
     <div className={`${styles.stage} ${className}`}>

@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  user-select: none;
+  pointer-events: none;
+}
+
+.pulse {
+  position: absolute;
+  inset: 0;
+  background: var(--leather-dark, #8B5E2A);
+  border-radius: 4px;
+  animation: sequencePulse 1.4s ease-in-out infinite;
+}
+
+@keyframes sequencePulse {
+  0%, 100% { opacity: 0.18; }
+  50% { opacity: 0.32; }
+}

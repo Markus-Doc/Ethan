@@ -1,0 +1,36 @@
+.container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--leather-pale);
+  animation: dustDrift var(--duration, 10s) ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes dustDrift {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: inherit;
+  }
+  50% {
+    transform: translate(calc(var(--drift-x) * 0.5), calc(var(--drift-y) * 0.5)) scale(1.2);
+    opacity: calc(var(--drift-opacity, 0.2) * 1.4);
+  }
+  100% {
+    transform: translate(var(--drift-x), var(--drift-y)) scale(0.8);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle {
+    animation: none;
+  }
+}

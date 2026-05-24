@@ -26,12 +26,12 @@ export default function WaxSeal({ href, label = 'Book a Workshop', size = 96 }: 
         aria-hidden="true"
       >
         {/* Outer pressed wax drip */}
-        <circle cx="50" cy="50" r="46" fill="none" stroke="#6B0E0E" strokeWidth="2" opacity="0.4" />
+        <circle cx="50" cy="50" r="46" fill="none" stroke="var(--wax-ring, #6B0E0E)" strokeWidth="2" opacity="0.4" />
         {/* Wax body */}
         <circle cx="50" cy="50" r="42" fill="url(#waxGrad)" />
         {/* Texture cracks */}
-        <path d="M 30 35 Q 50 30 70 35" stroke="#5A0A0A" strokeWidth="0.5" fill="none" opacity="0.3" />
-        <path d="M 25 55 Q 50 50 75 55" stroke="#5A0A0A" strokeWidth="0.5" fill="none" opacity="0.3" />
+        <path d="M 30 35 Q 50 30 70 35" stroke="var(--wax-crack, #5A0A0A)" strokeWidth="0.5" fill="none" opacity="0.3" />
+        <path d="M 25 55 Q 50 50 75 55" stroke="var(--wax-crack, #5A0A0A)" strokeWidth="0.5" fill="none" opacity="0.3" />
         {/* Monogram W */}
         <text
           x="50"
@@ -40,7 +40,7 @@ export default function WaxSeal({ href, label = 'Book a Workshop', size = 96 }: 
           fontFamily="Cormorant Garamond, serif"
           fontWeight="300"
           fontSize="30"
-          fill="#F5EDD8"
+          fill="var(--parchment)"
           letterSpacing="1"
           opacity="0.92"
         >
@@ -48,9 +48,9 @@ export default function WaxSeal({ href, label = 'Book a Workshop', size = 96 }: 
         </text>
         <defs>
           <radialGradient id="waxGrad" cx="38%" cy="32%" r="60%">
-            <stop offset="0%" stopColor="#B02020" />
-            <stop offset="55%" stopColor="#8B1A1A" />
-            <stop offset="100%" stopColor="#4A0A0A" />
+            <stop offset="0%" stopColor="var(--wax-light, #B02020)" />
+            <stop offset="55%" stopColor="var(--wax-mid, #8B1A1A)" />
+            <stop offset="100%" stopColor="var(--wax-dark, #4A0A0A)" />
           </radialGradient>
         </defs>
       </svg>

@@ -11,11 +11,11 @@
 }
 
 .seal:hover {
-  transform: scale(1.06) rotate(-2deg);
+  transform: scale(1.10) rotate(-4deg);
 }
 
 .seal:active {
-  transform: scale(0.97) rotate(0deg);
+  transform: scale(0.96) rotate(0deg);
 }
 
 .sealSvg {

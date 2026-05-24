@@ -45,4 +45,42 @@ Lighthouse mobile audit: **Score 92** (goal ≥80 ✓)
 
 All CTAs verified importing from src/config/squarespace.ts. Squarespace-ready.
 
-## STATUS: COMPLETE — dev server runs, traversal passes, Lighthouse mobile 92 ✅
+## PHASE 8 — COMPLETE — 2026-05-24
+WebP sequence pipeline: pnpm add sharp. scripts/build-sequence.mjs reads/sorts 9 lifecycle PNGs.
+Desktop 1280×800 q88 WebP → public/sequences/book-hero/desktop/ (9 frames, **0.80 MB total** ✓ <3MB)
+Mobile 640×400 q82 WebP → public/sequences/book-hero/mobile/
+manifest.json written with frameCount:9, desktop/mobile paths, 6 named sections (rotateReveal, coverOpen, firstPage, pageFlips, backCover, contactHold) each with frameStart/End + scrollStart/End 0-1.
+"build:sequence" script added to package.json.
+
+## PHASE 9 — COMPLETE — 2026-05-24
+Created src/hooks/useHeroScrollProgress.ts — IntersectionObserver on #chapter-hero + rAF loop, progress 0-1.
+Created src/components/Book/ScrollSequence.tsx — preloads all frames via new Image(), updates imgRef.current.src inside rAF only (no React rerenders), mobile if innerWidth<768, loading pulse bg var(--leather-dark), fallback to BookSceneLoader on fetch error.
+Created ScrollSequence.module.css.
+Chapter0_Hero.tsx: replaced BookSceneLoader with ScrollSequence + useHeroScrollProgress. Kept tassel, wordmark, scrollHint.
+
+## PHASE 10 — COMPLETE — 2026-05-24
+Created src/components/UI/SmoothScroll.tsx — Lenis({lerp:0.08, smoothWheel:true}), gsap.ticker.add, lagSmoothing(0), desktop only (innerWidth>=768).
+layout.tsx main wrapped with SmoothScroll.
+Chapter1_Open.tsx: GSAP ScrollTrigger scrub:1.5 on desktop, vanilla scroll on mobile.
+Chapter4_Process.tsx: GSAP ScrollTrigger pin+scrub on desktop, vertical mobile unchanged.
+
+## PHASE 11 — COMPLETE — 2026-05-24 (ui-ux-pro-max)
+Ch0: wordmark font-style italic (Cormorant Garamond 300 italic). Section min-height 100svh confirmed.
+Ch1: background updated to cloth-dark→cloth-mid gradient. Cover rotation extended to -165deg.
+Ch2: drop cap ::first-letter — Cormorant 600 italic 3.2em var(--leather), float left.
+Ch3: card box-shadow → var(--shadow-leather). Hover translateY(-8px) confirmed.
+Ch5: section animated radial-gradient bg (workshopBgShift 16s). WaxSeal hover scale(1.10) rotate(-4deg).
+Ch6: studioName embossed multi-layer text-shadow. Footer border-top 1px solid var(--gold-dark).
+Global: focus-visible → 2px solid var(--gold). All interactive min tap-target 44px. WaxSeal SVG strokes → CSS vars (--wax-ring, --wax-crack, --wax-light, --wax-mid, --wax-dark added to tokens.css). parchment fill on monogram W.
+
+## PHASE 12 — COMPLETE — 2026-05-24
+Created src/components/UI/DustParticles.tsx — 28 desktop-only spans (display:none on mobile via useEffect), 1-3px, var(--leather-pale), opacity .12-.32, random drift 6-14s, aria-hidden, pointer-events:none. Mounts after ScrollSequence in Chapter0_Hero.
+prefers-reduced-motion: animation none in DustParticles.module.css.
+
+## PHASE 13 — COMPLETE — 2026-05-24
+pnpm build: ✓ 0 TypeScript errors, static generation clean.
+node scripts/traverse.mjs: ✓ 0 critical, 0 warnings at 1440+390.
+Cache headers: /sequences/:path* → Cache-Control: public, max-age=31536000, immutable (next.config.ts).
+public/sequences/ committed to repo.
+
+## STATUS: PHASES 8-13 COMPLETE — WebP sequences 0.80MB, rAF scrub, Lenis+GSAP desktop, premium UI polish, build clean, traversal clean ✅

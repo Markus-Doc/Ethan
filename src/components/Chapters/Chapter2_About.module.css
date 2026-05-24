@@ -141,6 +141,18 @@
   color: var(--ink);
 }
 
+.body p:first-child::first-letter {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 3.2em;
+  color: var(--leather);
+  float: left;
+  line-height: 0.78;
+  margin-right: 0.08em;
+  margin-top: 0.06em;
+}
+
 .cornerOrnament {
   font-size: 1.5rem;
   color: var(--leather);

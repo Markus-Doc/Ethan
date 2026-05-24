@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SmoothScroll from '@/components/UI/SmoothScroll'
 import { Cormorant_Garamond, EB_Garamond, Libre_Baskerville } from 'next/font/google'
 import '@/styles/tokens.css'
 import '@/styles/book.css'
@@ -54,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en-AU"
       className={`${cormorant.variable} ${ebGaramond.variable} ${libreBaskerville.variable}`}
     >
-      <body>{children}</body>
+      <body><SmoothScroll>{children}</SmoothScroll></body>
     </html>
   )
 }
