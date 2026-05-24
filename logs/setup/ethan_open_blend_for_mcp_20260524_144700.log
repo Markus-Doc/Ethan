@@ -1,0 +1,16 @@
+=== ETHAN OPEN BLENDER FILE FOR MCP ===
+Time: 05/24/2026 14:47:00
+RepoPath: C:\Users\marku\OneDrive\Documents\GitHub\Ethan
+
+=== BLEND FILES FOUND ===
+2026-05-24 14:46:32  C:\Users\marku\OneDrive\Documents\GitHub\Ethan\assets\book_model-v0.blend
+
+Selected blend file: C:\Users\marku\OneDrive\Documents\GitHub\Ethan\assets\book_model-v0.blend
+
+=== NEXT ===
+In Blender, confirm the file name appears in the title bar.
+Open the BlenderMCP tab.
+Confirm it still says Running on port 9876.
+Then start Claude Code from the Ethan repo and run the verification prompt.
+
+=== DONE ===
