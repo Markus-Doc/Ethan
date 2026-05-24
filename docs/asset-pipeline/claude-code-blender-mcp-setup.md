@@ -47,13 +47,35 @@ Claude Code should use this skill for any request involving Blender, the storybo
 
 ## Claude Code MCP registration
 
-The practical command from the selected Blender MCP project is:
+The practical default command from the selected Blender MCP project is:
 
 ```text
 claude mcp add blender uvx blender-mcp
 ```
 
 Run this from a normal terminal after Claude Code is installed.
+
+## Port configuration
+
+The default Blender MCP port is usually `9876`.
+
+If the Blender add-on shows a different running port, Claude Code must be configured with the same port through the MCP server environment.
+
+For this workstation, the current working local configuration is:
+
+```text
+BLENDER_HOST=localhost
+BLENDER_PORT=9877
+DISABLE_TELEMETRY=true
+```
+
+Verify the active Claude Code config with:
+
+```text
+claude mcp get blender
+```
+
+The Blender add-on panel and Claude Code MCP configuration must agree on the same port before any asset generation prompt is run.
 
 ## First verification prompt
 
@@ -99,9 +121,10 @@ If Claude cannot see Blender:
 2. Confirm the Blender MCP add-on is installed and enabled.
 3. Confirm the MCP server is started in Blender if required.
 4. Confirm `claude mcp list` shows the `blender` server.
-5. Restart Claude Code after adding the MCP server.
-6. Restart Blender after installing the add-on.
-7. Retry the verification prompt before editing.
+5. Confirm the Blender add-on running port matches `BLENDER_PORT` in `claude mcp get blender`.
+6. Restart Claude Code after changing the MCP server config.
+7. Restart Blender after installing the add-on.
+8. Retry the verification prompt before editing.
 
 ## Done state
 
