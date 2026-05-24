@@ -1,0 +1,4 @@
+scrapegraphai==2.1.1
+scrapegraph-py==2.1.0
+playwright>=1.60.0
+beautifulsoup4>=4.14.0

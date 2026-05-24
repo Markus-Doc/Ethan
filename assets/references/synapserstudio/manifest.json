@@ -1,0 +1,1382 @@
+{
+  "start_url": "https://www.synapserstudio.com/",
+  "generated_at": "2026-05-24T06:35:48Z",
+  "robots_txt_respected": true,
+  "downloaded": false,
+  "pages_crawled": [
+    "https://synapserstudio.com",
+    "https://synapserstudio.com/archive",
+    "https://synapserstudio.com/manifesto",
+    "https://synapserstudio.com/pt",
+    "https://www.synapserstudio.com/"
+  ],
+  "asset_count": 151,
+  "assets": [
+    {
+      "url": "https://www.synapserstudio.com/sounds/tick.wav",
+      "kind": "audio",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 206,
+      "content_type": "audio/wave",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/21c1dee959b18079-s.p.feed877b.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/23b7a97ae3b5c134-s.p.2902b61f.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/2cb3248479843ad2-s.p.d761d08f.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/53cb5b17add74ab8-s.p.3240bd04.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/5849aa7d99f8e15e-s.p.ea0ea436.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/5f402bd2d8eef81a-s.p.b72f0478.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/60ec66547305f91a-s.p.9dedac61.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/9433d1a810498265-s.p.8f3b692e.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/99e609270109b47d-s.p.64b9304e.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/a46a75cfd765634f-s.p.9fc5dbf1.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/a7e15459c1805da0-s.p.ec654d65.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/cb74272c1a4b1482-s.p.95214552.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/cbac32a10eb26c62-s.p.b9f88cc4.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/e9d5b069f63ab620-s.p.c6182c6b.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/effe91970fc4db64-s.p.19510058.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/media/f0b856f7f1c4bda0-s.p.0a1731ba.woff2",
+      "kind": "font",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/21c1dee959b18079-s.p.feed877b.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/23b7a97ae3b5c134-s.p.2902b61f.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/2cb3248479843ad2-s.p.d761d08f.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/53cb5b17add74ab8-s.p.3240bd04.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/5849aa7d99f8e15e-s.p.ea0ea436.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/5f402bd2d8eef81a-s.p.b72f0478.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/60ec66547305f91a-s.p.9dedac61.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/9433d1a810498265-s.p.8f3b692e.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/99e609270109b47d-s.p.64b9304e.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/a46a75cfd765634f-s.p.9fc5dbf1.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/a7e15459c1805da0-s.p.ec654d65.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/cb74272c1a4b1482-s.p.95214552.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/cbac32a10eb26c62-s.p.b9f88cc4.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/e9d5b069f63ab620-s.p.c6182c6b.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/effe91970fc4db64-s.p.19510058.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/media/f0b856f7f1c4bda0-s.p.0a1731ba.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/fonts/GeneralSans-Variable.woff2",
+      "kind": "font",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "font/woff2",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/0593325baf89f1b5524d276120c28e077cd3cd07-3600x1434.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/095a3e0238c9eaa7500bd6d67729206b372f4309-4000x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/14ffb754b80b284bf6e18ba1cdf72d799111151a-1920x810.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/1ac859481b12c2561b72b5aff4974d4a39f6f956-2560x1078.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/1c420c170b9d93ed0cebce2b8db4e38ae6acc7de-1920x810.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/25b185dccc56f68857dba2d18b20e3b9ceabc3ca-4000x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/260a9067f864976d6c8a8ec712c7bb8c5dc65172-1920x810.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/351d6319f0fead55762f7aaf072ede7721b3d461-5000x3750.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/37d8c94c735e8a4eecbcc0f380d938523fd6cb54-2560x1440.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/49263708f23deaa3a6c2e52d349de3c0046255eb-3600x1430.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/4b2418dcef56b0536189d52b4d566e74dc13a94f-4500x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/66bbfc873f37b8af7d36e250881d8a9f045536d3-4000x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/7fa92ebe864d440c174e3e70a941900d8fa1d3fa-3600x1438.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/8071a03811853de0fcf274029b4ee0e4e2b494a2-2560x1440.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/8e7fc1635f35324ba4682b6eff056a66b5b05d52-3600x1434.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/9e83bcbd8d5dbb205b2532fbbd5d664fa90c020e-1080x1080.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/a83b294f10ce6019f149a19eeb16c2f91eafb6ab-4000x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/a97237a8845d8c75910e54cf8a378cac8cdf0603-2560x1440.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/aa1b35a25ccae6d748d2a2bb2578d5cc70d618a6-11649x8002.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/b41602fafe1b5767809c0502240d82404fae0c74-2560x1440.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/b6dabbaf2988e880069908978817ba910194a3f7-4000x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/baf96de3a26761b130ab078fd0c3ce5f2b6bd5c8-5000x3500.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/bafdc3f817787cce6dda8165c3acf91b47303b5c-3600x1454.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/bee9cc35d6f46aefa49098013f6416d9e06003d6-2560x1440.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/cf8beb590391c8cea25ebffef1764a3e3e3d86da-4000x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/dace8a75577b16626332c5e48962f884f2a8e895-1920x810.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/de1ee1ea367844329943afd15d25c6bf3b500059-1920x810.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/e45644c4ba52b19d9cb3006ea3227408c1f9ffc1-4500x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/e536603e75c54be1a808d70194565a29e04d6948-3600x1432.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/e74bbda342a0417aed8e6d6eadae7e05cd27bb96-5000x3500.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/ecd4d28f14ba49d7b8ab89f23e872d6bb5de18f4-2560x1440.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/f3c3de3d541716fe24f02ae4edb90e1e3dd54847-4500x3000.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://cdn.sanity.io/images/27re645u/production/f4b413610071271349113dda371a9953d8446e50-1920x810.png?w=600&h=600&fit=max&auto=format&q=75",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/apple-touch-icon.png",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/favicon-dark.svg",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/favicon-light.svg",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/images/reel-poster.jpg",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/logo.svg",
+      "kind": "image",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F087335f2892da2bb59d99837115bfb2f6ce49e89-1344x1344.png&w=384&q=75",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F1ac859481b12c2561b72b5aff4974d4a39f6f956-2560x1078.png&w=384&q=75",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F623968a1b445a463f3ed8f477d07ebb9a88b237c-757x484.png&w=384&q=75",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2F9e83bcbd8d5dbb205b2532fbbd5d664fa90c020e-1080x1080.png&w=384&q=75",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F27re645u%2Fproduction%2Ff01b14a0f0d1aeb88c756096783e5fe25570a881-1024x1024.png&w=384&q=75",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/avif",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/apple-touch-icon.png",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/favicon-dark.svg",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/favicon-light.svg",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/images/reel-poster.jpg",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/logo.svg",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/noise.png",
+      "kind": "image",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/06f8962bce72ed30.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/08dcfc3b15383cd6.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/0f7425168428027a.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/1252701f7d5b7132.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/186a7e9dbf3c141e.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/1c4bed76d433dd93.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/2314e5364cc72f16.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/2f6b460ca6f3ad8e.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/4d50a56240aad950.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/5588187cba600666.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/5fe02c958b7ee9e8.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/61aa1501158b1ac3.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/6c3eff71c8dd3f35.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/74c94575d21c5bbf.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/8bf7b06d63975fea.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/a5a5ad90441bb083.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/a6dad97d9634a72d.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/ac074099b280702b.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/ae78e5700f7af0a5.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/b780d0bff7889229.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/manifesto",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/b7a25bb9f7ce035b.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/cd0bcf1c3f803f2b.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/d0300bffb79131f2.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/d80b3790a119a285.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/d96012bcfc98706a.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/f7254bd559f00924.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/fcf0b3d00c7732a7.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/turbopack-461fcbaf563dde2d.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_vercel/speed-insights/script.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/manifest.json",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/06f8962bce72ed30.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/08dcfc3b15383cd6.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/0f7425168428027a.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/1252701f7d5b7132.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/186a7e9dbf3c141e.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/1c4bed76d433dd93.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/2314e5364cc72f16.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/2f6b460ca6f3ad8e.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/4d50a56240aad950.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/5588187cba600666.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/5fe02c958b7ee9e8.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/61aa1501158b1ac3.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/6c3eff71c8dd3f35.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/74c94575d21c5bbf.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/8bf7b06d63975fea.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/a5a5ad90441bb083.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/a6dad97d9634a72d.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/ac074099b280702b.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/ae78e5700f7af0a5.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/b780d0bff7889229.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/manifesto",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/b7a25bb9f7ce035b.js",
+      "kind": "runtime",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/cd0bcf1c3f803f2b.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/d0300bffb79131f2.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/d80b3790a119a285.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/d96012bcfc98706a.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/f7254bd559f00924.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/fcf0b3d00c7732a7.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/turbopack-461fcbaf563dde2d.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_vercel/speed-insights/script.js",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/manifest.json",
+      "kind": "runtime",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/4191e87b5a3538a9.css",
+      "kind": "stylesheet",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/9e31d20932476e36.css",
+      "kind": "stylesheet",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/_next/static/chunks/9f9d127d1249aafc.css",
+      "kind": "stylesheet",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/4191e87b5a3538a9.css",
+      "kind": "stylesheet",
+      "source_page": "https://synapserstudio.com/archive",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/9e31d20932476e36.css",
+      "kind": "stylesheet",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/_next/static/chunks/9f9d127d1249aafc.css",
+      "kind": "stylesheet",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://synapserstudio.com/videos/SynapserStudioReel.mp4",
+      "kind": "video",
+      "source_page": "https://synapserstudio.com",
+      "status": null,
+      "content_type": null,
+      "bytes": null,
+      "local_path": null
+    },
+    {
+      "url": "https://www.synapserstudio.com/videos/SynapserStudioReel.mp4",
+      "kind": "video",
+      "source_page": "https://www.synapserstudio.com/",
+      "status": 206,
+      "content_type": "video/mp4",
+      "bytes": null,
+      "local_path": null
+    }
+  ],
+  "scrapegraphai_status": {
+    "scrapegraphai_installed": true,
+    "scrapegraph_py_installed": true,
+    "smart_scraper_graph_available": false,
+    "smart_scraper_graph_error": "ImportError: cannot import name 'ChatOllama' from 'langchain_community.chat_models' (C:\\Users\\marku\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\langchain_community\\chat_models\\__init__.py)",
+    "sgai_api_key_present": false
+  }
+}
