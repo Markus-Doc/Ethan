@@ -6,7 +6,7 @@ import bpy
 from mathutils import Vector
 
 
-REPO = Path(r"C:\Users\marku\OneDrive\Documents\GitHub\Ethan")
+REPO = Path(__file__).resolve().parents[1]
 REF_DIR = REPO / "assets" / "generations" / "walker_bookworks_all_frames_opening_turning_closing"
 SOURCE_DIR = REPO / "assets" / "source" / "blender"
 VERSION_DIR = SOURCE_DIR / "versions"
